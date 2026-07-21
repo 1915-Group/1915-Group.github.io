@@ -82,7 +82,7 @@
     gap: 10px;
     text-decoration: none;
   }
-  .brand img { height: 34px; width: auto; }
+  .brand img { height: 48px; width: auto; }
   nav.links {
     display: flex;
     gap: 28px;
@@ -151,7 +151,7 @@
   .signature {
     background: var(--navy);
     border-radius: 6px;
-    padding: 28px 24px 20px;
+    padding: 32px 28px 24px;
     box-shadow: 0 18px 40px -14px rgba(19, 30, 53, 0.45);
   }
   .signature svg { width: 100%; height: auto; overflow: visible; }
@@ -183,10 +183,10 @@
   .ba-panels {
     display: flex;
     justify-content: space-around;
-    gap: 18px;
+    gap: 32px;
     padding-top: 4px;
   }
-  .ba-panel { text-align: center; flex: 1; }
+  .ba-panel { text-align: center; flex: 1; min-width: 0; }
   .ba-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.72rem;
@@ -199,16 +199,16 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 14px;
-    height: 130px;
+    gap: 22px;
+    height: 140px;
   }
-  .ba-bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
-  .ba-value { color: var(--white); font-size: 0.72rem; font-weight: 600; margin-bottom: 6px; font-family: 'IBM Plex Mono', monospace; }
-  .ba-bar { width: 30px; border-radius: 3px 3px 0 0; }
+  .ba-bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 56px; }
+  .ba-value { color: var(--white); font-size: 0.74rem; font-weight: 600; margin-bottom: 8px; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+  .ba-bar { width: 38px; border-radius: 3px 3px 0 0; }
   .ba-before { background: rgba(255,255,255,0.28); }
   .ba-after { background: var(--green); }
-  .ba-tick { color: rgba(255,255,255,0.6); font-size: 0.68rem; margin-top: 6px; }
-  .ba-delta { color: var(--green); font-weight: 700; font-size: 0.85rem; margin: 10px 0 0; }
+  .ba-tick { color: rgba(255,255,255,0.6); font-size: 0.7rem; margin-top: 8px; }
+  .ba-delta { color: var(--green); font-weight: 700; font-size: 0.85rem; margin: 14px 0 0; }
 
   /* ---------- Cost of a SKU: pie ---------- */
   .pie-cols {
@@ -371,7 +371,7 @@
     font-size: 0.82rem;
     color: var(--ink-soft);
   }
-  footer .brand img { height: 22px; }
+  footer .brand img { height: 30px; }
 
   /* ---------- Reveal on scroll ---------- */
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
