@@ -155,7 +155,7 @@
   .signature {
     background: var(--navy);
     border-radius: 6px;
-    padding: 28px 24px 20px;
+    padding: 32px 28px 24px;
     box-shadow: 0 18px 40px -14px rgba(19, 30, 53, 0.45);
   }
   .signature svg { width: 100%; height: auto; overflow: visible; }
@@ -187,7 +187,7 @@
   .ba-panels {
     display: flex;
     justify-content: space-around;
-    gap: 18px;
+    gap: 32px;
     padding-top: 4px;
   }
   .ba-panel { text-align: center; flex: 1; }
@@ -197,18 +197,18 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--teal);
-    margin: 0 0 10px;
+    margin: 0 0 22px;
   }
   .ba-bars {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 14px;
-    height: 130px;
+    gap: 22px;
+    min-height: 110px;
   }
-  .ba-bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
-  .ba-value { color: var(--white); font-size: 0.72rem; font-weight: 600; margin-bottom: 6px; font-family: 'IBM Plex Mono', monospace; }
-  .ba-bar { width: 30px; border-radius: 3px 3px 0 0; }
+  .ba-bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 56px; }
+  .ba-value { color: var(--white); font-size: 0.74rem; font-weight: 600; margin-bottom: 8px; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+  .ba-bar { width: 38px; border-radius: 3px 3px 0 0; }
   .ba-before { background: rgba(255,255,255,0.28); }
   .ba-after { background: var(--green); }
   .ba-tick { color: rgba(255,255,255,0.6); font-size: 0.68rem; margin-top: 6px; }
@@ -285,6 +285,20 @@
     color: var(--ink-soft);
     max-width: 62ch;
     font-size: 0.95rem;
+  }
+
+  .example-tag {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--navy);
+    padding: 6px 14px;
+    border-radius: 3px;
+    margin-bottom: 18px;
   }
 
   /* ---------- Where This Shows Up ---------- */
@@ -494,7 +508,7 @@
     <div class="wrap">
       <div class="section-head reveal" style="margin-bottom:22px;">
         <p class="eyebrow">Where This Shows Up</p>
-        <h2 style="font-size:1.5rem;">Different questions, same approach: real numbers before real commitments.</h2>
+        <h2 style="font-size:1.5rem;">Different questions, one method: real data before the call gets made.</h2>
       </div>
       <div class="focus-grid reveal">
         <div class="focus-item">
@@ -509,8 +523,8 @@
         </div>
         <div class="focus-item">
           <div class="focus-bar" style="background:#3f7d6e;"></div>
-          <h3>Category &amp; Rebate Strategy</h3>
-          <p>Structure category programs and rebate mechanics that actually pencil out.</p>
+          <h3>Public Sector Compliance Audits</h3>
+          <p>Verify third-party and self-supplied purchasing against Ontario's Buy Ontario Act before funding's on the line.</p>
         </div>
       </div>
       <p class="focus-note">These are examples of the work, not the edges of it. If it comes down to a number before a decision gets made, it's worth a conversation.</p>
@@ -521,6 +535,7 @@
 
   <section id="problem">
     <div class="wrap">
+      <div class="example-tag reveal">A closer look: SKU &amp; Margin Rationalization</div>
       <div class="section-head reveal" style="margin-bottom:22px;">
         <p class="eyebrow">The Problem</p>
       </div>
@@ -670,7 +685,7 @@
     <div class="wrap">
       <div class="contact-box reveal">
         <div>
-          <h2>Let's look at your catalogue.</h2>
+          <h2>Let's look at your numbers.</h2>
           <p>One short call to see if there's a fit.</p>
         </div>
         <div class="contact-cta">
