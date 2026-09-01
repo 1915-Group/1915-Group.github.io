@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1915 Group — SKU & Margin Consulting for Distributors</title>
-<meta name="description" content="1915 Group helps distributors and manufacturers find the SKUs quietly draining margin, and the ones worth doubling down on.">
+<title>1915 Group — Data-Driven Strategy for Distributors, Manufacturers & GPOs</title>
+<meta name="description" content="1915 Group helps distributors, manufacturers, and GPOs make data-backed calls on where to focus, from product portfolios to new markets.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -287,6 +287,24 @@
     font-size: 0.95rem;
   }
 
+  /* ---------- Where This Shows Up ---------- */
+  .focus-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .focus-item { flex: 1; min-width: 200px; }
+  .focus-bar { width: 32px; height: 3px; border-radius: 2px; margin-bottom: 16px; }
+  .focus-item h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--navy); }
+  .focus-item p { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
+  .focus-note {
+    margin-top: 28px;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    font-style: italic;
+    max-width: 62ch;
+  }
+
   .donut-row {
     display: flex;
     align-items: center;
@@ -386,6 +404,7 @@
     nav.links { display: none; }
     .hero-grid { grid-template-columns: 1fr; }
     .flow { flex-direction: column; align-items: stretch; }
+    .focus-grid { flex-direction: column; gap: 24px; }
     .flow-arrow { transform: rotate(90deg); margin: 0 auto; padding-top: 0; }
     .pie-row { flex-direction: column; align-items: flex-start; }
     .pie-cols { flex-direction: column; gap: 32px; }
@@ -403,6 +422,7 @@
       <img src="assets/logo.jpg" alt="1915 Group" width="150" height="88">
     </a>
     <nav class="links">
+      <a href="#focus">What We Do</a>
       <a href="#problem">The Problem</a>
       <a href="#cost">Cost of a SKU</a>
       <a href="#process">Process</a>
@@ -417,7 +437,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">SKU &amp; Margin Consulting for Distributors</p>
+        <p class="eyebrow">Data-Driven Strategy for Distributors, Manufacturers &amp; GPOs</p>
         <h1>Your catalogue is hiding its margin.</h1>
         <p class="lede">Find the SKUs draining margin. Grow the ones that aren't.</p>
         <div class="cta-row">
@@ -467,6 +487,37 @@
       </div>
     </div>
   </section>
+
+  <hr class="rule">
+
+  <section id="focus">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:22px;">
+        <p class="eyebrow">Where This Shows Up</p>
+        <h2 style="font-size:1.5rem;">Different questions, same approach: real numbers before real commitments.</h2>
+      </div>
+      <div class="focus-grid reveal">
+        <div class="focus-item">
+          <div class="focus-bar" style="background:#1c2b4a;"></div>
+          <h3>SKU &amp; Margin Rationalization</h3>
+          <p>Find the products draining margin, and the ones worth doubling down on.</p>
+        </div>
+        <div class="focus-item">
+          <div class="focus-bar" style="background:#3a5a8c;"></div>
+          <h3>Market Entry Assessment</h3>
+          <p>A data-backed go / no-go before a GPO or distributor commits to a new market.</p>
+        </div>
+        <div class="focus-item">
+          <div class="focus-bar" style="background:#3f7d6e;"></div>
+          <h3>Category &amp; Rebate Strategy</h3>
+          <p>Structure category programs and rebate mechanics that actually pencil out.</p>
+        </div>
+      </div>
+      <p class="focus-note">These are examples of the work, not the edges of it. If it comes down to a number before a decision gets made, it's worth a conversation.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
 
   <section id="problem">
     <div class="wrap">
