@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1915 Group — Data-Driven Strategy for Distributors, Manufacturers & GPOs</title>
-<meta name="description" content="1915 Group helps distributors, manufacturers, and GPOs make data-backed calls on where to focus, from product portfolios to new markets.">
+<title>1915 Group — Usable Insights for the Jan San Industry</title>
+<meta name="description" content="1915 Group provides usable insights for clients in the jan san industry, built on senior executive experience across manufacturing, distribution, and healthcare operations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Montserrat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --navy: #1c2b4a;
@@ -28,7 +28,7 @@
     margin: 0;
     background: var(--cream);
     color: var(--ink);
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -59,7 +59,6 @@
     outline-offset: 3px;
   }
 
-  /* ---------- Nav ---------- */
   header.site-nav {
     position: sticky;
     top: 0;
@@ -76,19 +75,9 @@
     max-width: var(--max-w);
     margin: 0 auto;
   }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-  }
-  .brand img { height: 34px; width: auto; }
-  nav.links {
-    display: flex;
-    gap: 28px;
-    font-size: 0.92rem;
-    font-weight: 500;
-  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand img { height: 56px; width: auto; }
+  nav.links { display: flex; gap: 28px; font-size: 0.92rem; font-weight: 500; }
   nav.links a { text-decoration: none; color: var(--navy); transition: color 0.2s ease; }
   nav.links a:hover { color: var(--green); }
   .nav-cta {
@@ -103,242 +92,65 @@
   }
   .nav-cta:hover { background: var(--navy-deep); transform: translateY(-1px); }
 
-  /* ---------- Hero ---------- */
-  .hero {
-    padding: 68px 0 52px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 40px;
-    align-items: center;
-  }
-  .hero h1 {
-    font-size: clamp(2.3rem, 4.4vw, 3.6rem);
-    font-weight: 600;
-    line-height: 1.06;
-    margin: 10px 0 16px;
-  }
-  .hero p.lede {
-    font-size: 1.15rem;
-    color: var(--ink-soft);
-    max-width: 46ch;
-    margin-bottom: 22px;
-  }
-  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-  .btn-primary {
-    background: var(--navy);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 14px 26px;
-    border-radius: 3px;
-    font-size: 0.98rem;
-    transition: transform 0.15s ease, background 0.15s ease;
-    display: inline-block;
-  }
-  .btn-primary:hover { background: var(--green); transform: translateY(-1px); }
-  .btn-secondary {
-    color: var(--navy);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    border-bottom: 1px solid var(--navy);
-    padding-bottom: 2px;
-    transition: color 0.2s ease, border-color 0.2s ease;
-  }
-  .btn-secondary:hover { color: var(--green); border-color: var(--green); }
-
-  /* Signature graphic: a stepped margin-recovery line, echoing the logo's arrow */
-  .signature {
-    background: var(--navy);
-    border-radius: 6px;
-    padding: 32px 28px 24px;
-    box-shadow: 0 18px 40px -14px rgba(19, 30, 53, 0.45);
-  }
-  .signature svg { width: 100%; height: auto; overflow: visible; }
-  .sig-caption {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .reveal { transition: none; }
-  }
-
-  /* ---------- Section shell ---------- */
-  section { padding: 52px 0; }
-  .section-head { max-width: 640px; margin-bottom: 28px; }
+  section { padding: 64px 0; }
+  .section-head { max-width: 720px; margin-bottom: 30px; }
   .section-head h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 600; margin-top: 8px; }
-  .rule {
-    border: none;
-    border-top: 1px solid rgba(28, 43, 74, 0.1);
-    margin: 0;
-  }
+  .rule { border: none; border-top: 1px solid rgba(28, 43, 74, 0.1); margin: 0; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { .reveal { transition: none; } }
 
-  /* ---------- Hero: before/after bars ---------- */
-  .ba-panels {
-    display: flex;
-    justify-content: space-around;
-    gap: 32px;
-    padding-top: 4px;
+  .about-hero h1 {
+    font-size: clamp(2.1rem, 4vw, 3.1rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 10px 0 20px;
+    max-width: 16ch;
   }
-  .ba-panel { text-align: center; flex: 1; }
-  .ba-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin: 0 0 22px;
+  .about-hero .lede {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin-bottom: 16px;
   }
-  .ba-bars {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 22px;
-    min-height: 110px;
+  .about-hero .lede-sub {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    max-width: 66ch;
+    margin-bottom: 36px;
   }
-  .ba-bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 56px; }
-  .ba-value { color: var(--white); font-size: 0.74rem; font-weight: 600; margin-bottom: 8px; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
-  .ba-bar { width: 38px; border-radius: 3px 3px 0 0; }
-  .ba-before { background: rgba(255,255,255,0.28); }
-  .ba-after { background: var(--green); }
-  .ba-tick { color: rgba(255,255,255,0.6); font-size: 0.68rem; margin-top: 6px; }
-  .ba-delta { color: var(--green); font-weight: 700; font-size: 0.85rem; margin: 10px 0 0; }
-
-  /* ---------- Cost of a SKU: pie ---------- */
-  .pie-cols {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-  .pie-col { flex: 1; min-width: 220px; max-width: 320px; }
-  .pie-col-label {
+  .tag-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--navy);
-    margin: 0 0 14px;
+    margin-bottom: 14px;
   }
-  .pie-total {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--ink-soft);
-    margin: 14px 0 0;
+  .tag-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .tag-pill {
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(28,43,74,0.18);
+    color: var(--navy);
+    background: var(--white);
   }
-  .pie-chart-mfg {
-    background: conic-gradient(
-      #1c2b4a 0% 34%,
-      #3a5a8c 34% 43%,
-      #8fc6ba 43% 49%,
-      #5c6c8a 49% 67%,
-      #3f7d6e 67% 100%
-    );
-  }
-  .pie-stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  .pie-stack .pie-legend { align-self: stretch; max-width: 260px; }
-  .pie-row {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-  .pie-chart {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    flex: 0 0 auto;
-    background: conic-gradient(
-      #1c2b4a 0% 48%,
-      #3a5a8c 48% 66%,
-      #8fc6ba 66% 74%,
-      #5c6c8a 74% 100%
-    );
-    box-shadow: 0 10px 26px -12px rgba(28,43,74,0.35);
-  }
-  .pie-legend {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 0.92rem;
-    color: var(--ink);
-  }
-  .pie-legend span { display: flex; align-items: center; gap: 9px; }
-  .pie-legend i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; flex-shrink: 0; }
-  .pie-caption {
-    margin-top: 18px;
-    color: var(--ink-soft);
-    max-width: 62ch;
-    font-size: 0.95rem;
-  }
+  .tag-pill.accent-navy { border-color: rgba(28,43,74,0.3); }
+  .tag-pill.accent-blue { border-color: rgba(58,90,140,0.35); color: var(--blue-mid); }
+  .tag-pill.accent-green { border-color: rgba(63,125,110,0.35); color: var(--green); }
+  .tag-pill.more { background: transparent; border-style: dashed; color: var(--ink-soft); }
 
-  .example-tag {
-    display: inline-block;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white);
-    background: var(--navy);
-    padding: 6px 14px;
-    border-radius: 3px;
-    margin-bottom: 18px;
-  }
-
-  /* ---------- Where This Shows Up ---------- */
-  .focus-grid {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  .focus-item { flex: 1; min-width: 200px; }
-  .focus-bar { width: 32px; height: 3px; border-radius: 2px; margin-bottom: 16px; }
-  .focus-item h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--navy); }
-  .focus-item p { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
-  .focus-note {
-    margin-top: 28px;
-    color: var(--ink-soft);
-    font-size: 0.92rem;
-    font-style: italic;
-    max-width: 62ch;
-  }
-
-  .donut-row {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    flex-wrap: wrap;
-  }
-  .donut-seg { transition: stroke-dasharray 1.2s ease; }
-
-  /* ---------- Process: icon flow ---------- */
   .flow {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 8px;
+    margin-top: 40px;
   }
-  .flow-step {
-    flex: 1;
-    text-align: center;
-    padding: 8px 10px;
-  }
+  .flow-step { flex: 1; text-align: center; padding: 8px 10px; }
   .flow-icon {
     width: 68px; height: 68px;
     margin: 0 auto 14px;
@@ -347,57 +159,66 @@
     display: flex; align-items: center; justify-content: center;
     border: 1px solid rgba(28,43,74,0.1);
   }
-  .flow-step .process-num { font-size: 1.1rem; margin-bottom: 4px; }
-  .flow-step h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 6px; }
+  .flow-step .process-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem; font-weight: 600; color: var(--green);
+    margin-bottom: 4px;
+  }
+  .flow-step h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; font-family: 'Fraunces', serif; }
   .flow-step p { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
   .flow-arrow { padding-top: 34px; flex: 0 0 auto; opacity: 0.8; }
-
-  /* ---------- Deliverable: stacked bar ---------- */
-  .deliverable-head { margin-bottom: 20px; }
-  .deliverable-head h2 { font-size: 1.7rem; margin-top: 8px; }
-  .stackbar-track {
-    display: flex;
-    width: 100%;
-    height: 34px;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  .stackbar-seg { height: 100%; }
-  .stackbar-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-top: 18px;
-    font-size: 0.85rem;
+  .process-note {
+    margin-top: 36px;
     color: var(--ink-soft);
-  }
-  .stackbar-legend span { display: flex; align-items: center; gap: 7px; }
-  .stackbar-legend i {
-    width: 10px; height: 10px; border-radius: 2px; display: inline-block;
+    font-size: 0.95rem;
+    max-width: 66ch;
   }
 
-  /* ---------- Contact ---------- */
+  .insights-copy { max-width: 66ch; color: var(--ink-soft); margin-bottom: 32px; }
+  .insight-cards { display: flex; gap: 24px; flex-wrap: wrap; }
+  .insight-card {
+    flex: 1; min-width: 220px;
+    background: var(--white);
+    border: 1px solid rgba(28,43,74,0.08);
+    border-radius: 6px;
+    padding: 22px;
+  }
+  .insight-card .soon {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .insight-card h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.35; }
+
   .contact-box {
     background: var(--navy);
     border-radius: 8px;
     padding: 56px 48px;
     color: var(--white);
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 32px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
   }
   .contact-box h2 { color: var(--white); font-size: clamp(1.6rem, 3vw, 2.1rem); }
   .contact-box p { color: rgba(255,255,255,0.78); max-width: 48ch; margin: 14px 0 0; }
-  .contact-cta { text-align: right; }
-  .contact-cta a.btn-primary { font-size: 1rem; }
-  .contact-note {
-    display: block;
-    margin-top: 12px;
-    font-size: 0.8rem;
-    color: var(--teal);
-    font-family: 'IBM Plex Mono', monospace;
+  .btn-primary {
+    background: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-size: 1rem;
+    transition: transform 0.15s ease, background 0.15s ease;
+    display: inline-block;
   }
+  .btn-primary:hover { background: #4f9683; transform: translateY(-1px); }
 
   footer {
     padding: 32px 0 48px;
@@ -407,23 +228,13 @@
     font-size: 0.82rem;
     color: var(--ink-soft);
   }
-  footer .brand img { height: 22px; }
+  footer .brand img { height: 30px; }
 
-  /* ---------- Reveal on scroll ---------- */
-  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.is-visible { opacity: 1; transform: translateY(0); }
-
-  /* ---------- Mobile ---------- */
   @media (max-width: 860px) {
     nav.links { display: none; }
-    .hero-grid { grid-template-columns: 1fr; }
     .flow { flex-direction: column; align-items: stretch; }
-    .focus-grid { flex-direction: column; gap: 24px; }
     .flow-arrow { transform: rotate(90deg); margin: 0 auto; padding-top: 0; }
-    .pie-row { flex-direction: column; align-items: flex-start; }
-    .pie-cols { flex-direction: column; gap: 32px; }
-    .contact-box { grid-template-columns: 1fr; padding: 40px 28px; text-align: left; }
-    .contact-cta { text-align: left; }
+    .contact-box { flex-direction: column; text-align: left; align-items: flex-start; padding: 40px 28px; }
     .wrap { padding: 0 20px; }
   }
 </style>
@@ -436,11 +247,9 @@
       <img src="assets/logo.jpg" alt="1915 Group" width="150" height="88">
     </a>
     <nav class="links">
-      <a href="#focus">What We Do</a>
-      <a href="#problem">The Problem</a>
-      <a href="#cost">Cost of a SKU</a>
+      <a href="#about">About</a>
       <a href="#process">Process</a>
-      <a href="#deliverable">What You Get</a>
+      <a href="#insights">Industry Insights</a>
     </nav>
     <a class="nav-cta" href="mailto:1915.consulting.group@gmail.com">Book a call</a>
   </div>
@@ -448,152 +257,23 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Data-Driven Strategy for Distributors, Manufacturers &amp; GPOs</p>
-        <h1>Your catalogue is hiding its margin.</h1>
-        <p class="lede">Find the SKUs draining margin. Grow the ones that aren't.</p>
-        <div class="cta-row">
-          <a class="btn-primary" href="mailto:1915.consulting.group@gmail.com">Book a call</a>
-          <a class="btn-secondary" href="#process">See the process</a>
-        </div>
-      </div>
-      <div class="signature reveal">
-        <div class="ba-panels">
-          <div class="ba-panel">
-            <p class="ba-label">TY Sales</p>
-            <div class="ba-bars">
-              <div class="ba-bar-wrap">
-                <span class="ba-value">$6.94M</span>
-                <div class="ba-bar ba-before" style="height:106px;"></div>
-                <span class="ba-tick">Before</span>
-              </div>
-              <div class="ba-bar-wrap">
-                <span class="ba-value">$7.22M</span>
-                <div class="ba-bar ba-after" style="height:110px;"></div>
-                <span class="ba-tick">After</span>
-              </div>
-            </div>
-            <p class="ba-delta">+4.1%</p>
-          </div>
-          <div class="ba-panel">
-            <p class="ba-label">TY Margin $</p>
-            <div class="ba-bars">
-              <div class="ba-bar-wrap">
-                <span class="ba-value">$2.97M</span>
-                <div class="ba-bar ba-before" style="height:105px;"></div>
-                <span class="ba-tick">Before</span>
-              </div>
-              <div class="ba-bar-wrap">
-                <span class="ba-value">$3.11M</span>
-                <div class="ba-bar ba-after" style="height:110px;"></div>
-                <span class="ba-tick">After</span>
-              </div>
-            </div>
-            <p class="ba-delta">+4.8%</p>
-          </div>
-        </div>
-        <div class="sig-caption">
-          <span>Same 56-SKU sample catalogue</span>
-          <span>Blended margin: 42.8% &rarr; 43.1%</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section id="focus">
+  <section id="about" class="about-hero">
     <div class="wrap">
-      <div class="section-head reveal" style="margin-bottom:22px;">
-        <p class="eyebrow">Where This Shows Up</p>
-        <h2 style="font-size:1.5rem;">Different questions, one method: real data before the call gets made.</h2>
-      </div>
-      <div class="focus-grid reveal">
-        <div class="focus-item">
-          <div class="focus-bar" style="background:#1c2b4a;"></div>
-          <h3>SKU &amp; Margin Rationalization</h3>
-          <p>Find the products draining margin, and the ones worth doubling down on.</p>
-        </div>
-        <div class="focus-item">
-          <div class="focus-bar" style="background:#3a5a8c;"></div>
-          <h3>Market Entry Assessment</h3>
-          <p>A data-backed go / no-go before a GPO or distributor commits to a new market.</p>
-        </div>
-        <div class="focus-item">
-          <div class="focus-bar" style="background:#3f7d6e;"></div>
-          <h3>Public Sector Compliance Audits</h3>
-          <p>Verify third-party and self-supplied purchasing against Ontario's Buy Ontario Act before funding's on the line.</p>
-        </div>
-      </div>
-      <p class="focus-note">These are examples of the work, not the edges of it. If it comes down to a number before a decision gets made, it's worth a conversation.</p>
-    </div>
-  </section>
+      <p class="eyebrow">About 1915 Group</p>
+      <h1>Usable insights for the jan san industry.</h1>
+      <p class="lede">Our experience sits in senior executive roles across manufacturing, distribution, and healthcare operations, working closely with service providers and Group Purchasing Organizations (GPOs).</p>
+      <p class="lede-sub">We pair the framework thinking of an MBA education with decades of real-world, hands-on experience, insights built to be used, not just read.</p>
 
-  <hr class="rule">
-
-  <section id="problem">
-    <div class="wrap">
-      <div class="example-tag reveal">A closer look: SKU &amp; Margin Rationalization</div>
-      <div class="section-head reveal" style="margin-bottom:22px;">
-        <p class="eyebrow">The Problem</p>
+      <p class="tag-label reveal">Where We've Helped</p>
+      <div class="tag-row reveal">
+        <span class="tag-pill accent-navy">Market Entry Analysis</span>
+        <span class="tag-pill accent-blue">SKU Rationalization</span>
+        <span class="tag-pill accent-green">Third-Party Compliance</span>
+        <span class="tag-pill accent-navy">Tariff Diversion</span>
+        <span class="tag-pill accent-blue">SOP Development (Infection Prevention)</span>
+        <span class="tag-pill accent-green">Operational Efficiency Training</span>
+        <span class="tag-pill more">+ more</span>
       </div>
-      <div class="donut-row reveal">
-        <div class="donut-wrap">
-          <svg viewBox="0 0 180 180" width="180" height="180">
-            <circle cx="90" cy="90" r="70" fill="none" stroke="rgba(28,43,74,0.1)" stroke-width="20"/>
-            <circle class="donut-seg" cx="90" cy="90" r="70" fill="none" stroke="#3f7d6e" stroke-width="20"
-              stroke-dasharray="153.9 439.8" stroke-dashoffset="0" transform="rotate(-90 90 90)"/>
-            <text x="90" y="84" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="34" fill="#1c2b4a">35%</text>
-            <text x="90" y="106" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="0.06em" fill="#5b5c54">OF CATALOG</text>
-          </svg>
-        </div>
-        <div class="donut-caption">
-          <p class="stat-label" style="max-width:30ch; font-size:1.05rem;">generates under <strong>6% of margin</strong> in a typical distributor catalogue.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section id="cost">
-    <div class="wrap">
-      <div class="section-head reveal" style="margin-bottom:22px;">
-        <p class="eyebrow">The Cost of a SKU</p>
-        <h2 style="font-size:1.5rem;">A SKU costs money every month it sits on a shelf, sold or not.</h2>
-      </div>
-      <div class="pie-cols">
-        <div class="pie-col reveal">
-          <p class="pie-col-label">As a Distributor</p>
-          <div class="pie-stack">
-            <div class="pie-chart" role="img" aria-label="Distributor cost per SKU: 48% capital, 18% storage and handling, 8% service, 26% risk"></div>
-            <div class="pie-legend">
-              <span><i style="background:#1c2b4a;"></i>Capital &mdash; $1,488 (48%)</span>
-              <span><i style="background:#3a5a8c;"></i>Storage &amp; Handling &mdash; $558 (18%)</span>
-              <span><i style="background:#8fc6ba;"></i>Service &mdash; $248 (8%)</span>
-              <span><i style="background:#5c6c8a;"></i>Risk &mdash; $806 (26%)</span>
-            </div>
-          </div>
-          <p class="pie-total">~$3,100 / SKU / year</p>
-        </div>
-        <div class="pie-col reveal">
-          <p class="pie-col-label">As a Manufacturer</p>
-          <div class="pie-stack">
-            <div class="pie-chart pie-chart-mfg" role="img" aria-label="Manufacturer cost per SKU: 34% capital, 9% storage and handling, 6% service, 18% risk, 33% regulatory and association fees"></div>
-            <div class="pie-legend">
-              <span><i style="background:#1c2b4a;"></i>Capital &mdash; $1,488 (34%)</span>
-              <span><i style="background:#3a5a8c;"></i>Storage &amp; Handling &mdash; $391 (9%)</span>
-              <span><i style="background:#8fc6ba;"></i>Service &mdash; $248 (6%)</span>
-              <span><i style="background:#5c6c8a;"></i>Risk &mdash; $806 (18%)</span>
-              <span><i style="background:#3f7d6e;"></i>Regulatory / Association &mdash; $1,500 (33%)</span>
-            </div>
-          </div>
-          <p class="pie-total">~$4,433 / SKU / year</p>
-        </div>
-      </div>
-      <p class="pie-caption">A slow, thin-margin SKU costs money every month with nothing to show for it. For a manufacturer, certifications like CSA or EcoLogo pile on top, billed per SKU, per mark, every year, often $1,500 on their own.</p>
     </div>
   </section>
 
@@ -601,9 +281,12 @@
 
   <section id="process">
     <div class="wrap">
-      <div class="section-head reveal" style="margin-bottom:22px;">
-        <p class="eyebrow">How It Works</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Process</p>
+        <h2>A stage-gate approach to every engagement.</h2>
       </div>
+      <p class="process-note reveal">This keeps stakeholders collaborating openly before more time gets invested, and it means the insight only has to be good enough to make the next decision, not perfect. Every engagement starts with a full proposal, start to finish, broken into gates so you can see exactly where your own team could take it over.</p>
+
       <div class="flow">
         <div class="flow-step reveal">
           <div class="flow-icon">
@@ -614,8 +297,8 @@
             </svg>
           </div>
           <div class="process-num">01</div>
-          <h3>Run the numbers</h3>
-          <p>Flag every SKU by margin &amp; velocity</p>
+          <h3>Align</h3>
+          <p>Open collaboration with key stakeholders before deeper work begins</p>
         </div>
         <div class="flow-arrow" aria-hidden="true">
           <svg viewBox="0 0 40 16" width="40" height="16"><path d="M0,8 H32 M24,1 L33,8 L24,15" fill="none" stroke="#3f7d6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -630,8 +313,8 @@
             </svg>
           </div>
           <div class="process-num">02</div>
-          <h3>Get everyone in a room</h3>
-          <p>Sales, ops &amp; marketing agree the call</p>
+          <h3>Decide</h3>
+          <p>Stakeholders review at each gate, insights that are "good enough" to act on</p>
         </div>
         <div class="flow-arrow" aria-hidden="true">
           <svg viewBox="0 0 40 16" width="40" height="16"><path d="M0,8 H32 M24,1 L33,8 L24,15" fill="none" stroke="#3f7d6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -647,8 +330,8 @@
             </svg>
           </div>
           <div class="process-num">03</div>
-          <h3>Make the cut</h3>
-          <p>Phased rollout, zero customer surprises</p>
+          <h3>Transition</h3>
+          <p>A clear point in the plan where your team can take the work over</p>
         </div>
       </div>
     </div>
@@ -656,41 +339,40 @@
 
   <hr class="rule">
 
-  <section id="deliverable">
+  <section id="insights">
     <div class="wrap">
-      <div class="deliverable-head reveal">
-        <p class="eyebrow">What You Get</p>
-        <h2>One action list per SKU.</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">Industry Insights</p>
+        <h2>Written to be useful, not just read.</h2>
       </div>
-      <div class="stackbar reveal">
-        <div class="stackbar-track">
-          <div class="stackbar-seg" style="width:22.8%; background:#1c2b4a;" title="Core Volume Lines"></div>
-          <div class="stackbar-seg" style="width:12.0%; background:#8fc6ba;" title="Specialty Lines"></div>
-          <div class="stackbar-seg" style="width:51.1%; background:#3a5a8c;" title="Long-Tail Orders"></div>
-          <div class="stackbar-seg" style="width:7.8%; background:#5c6c8a;" title="Redundant SKUs"></div>
-          <div class="stackbar-seg" style="width:6.3%; background:#3f7d6e;" title="Loss Leaders"></div>
+      <p class="insights-copy reveal">Practical write-ups on jan san operations, distribution, and compliance, built from the same real-world experience behind every engagement.</p>
+      <div class="insight-cards reveal">
+        <div class="insight-card">
+          <span class="soon">Coming Soon</span>
+          <h3>SKU Rationalization for Distributors</h3>
         </div>
-        <div class="stackbar-legend">
-          <span><i style="background:#1c2b4a;"></i>Core &mdash; Keep</span>
-          <span><i style="background:#8fc6ba;"></i>Specialty &mdash; Grow</span>
-          <span><i style="background:#3a5a8c;"></i>Long-Tail &mdash; Rationalize</span>
-          <span><i style="background:#5c6c8a;"></i>Redundant &mdash; Consolidate</span>
-          <span><i style="background:#3f7d6e;"></i>Loss Leaders &mdash; Renegotiate</span>
+        <div class="insight-card">
+          <span class="soon">Coming Soon</span>
+          <h3>Compliance for Public Sector Buyers</h3>
+        </div>
+        <div class="insight-card">
+          <span class="soon">Coming Soon</span>
+          <h3>Market Entry Economics for GPOs</h3>
         </div>
       </div>
     </div>
   </section>
 
+  <hr class="rule">
+
   <section id="contact">
     <div class="wrap">
       <div class="contact-box reveal">
         <div>
-          <h2>Let's look at your numbers.</h2>
+          <h2>Let's talk.</h2>
           <p>One short call to see if there's a fit.</p>
         </div>
-        <div class="contact-cta">
-          <a class="btn-primary" href="mailto:1915.consulting.group@gmail.com">Book a call</a>
-        </div>
+        <a class="btn-primary" href="mailto:1915.consulting.group@gmail.com">Book a call</a>
       </div>
     </div>
   </section>
