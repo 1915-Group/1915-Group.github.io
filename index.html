@@ -193,6 +193,9 @@
     margin-bottom: 10px;
   }
   .insight-card h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.35; }
+  a.insight-card { display: block; text-decoration: none; color: inherit; transition: border-color 0.2s ease, transform 0.2s ease; }
+  a.insight-card:hover { border-color: var(--green); transform: translateY(-2px); }
+  .insight-card .soon { color: var(--green); }
 
   .contact-box {
     background: var(--navy);
@@ -351,10 +354,10 @@
           <span class="soon">Coming Soon</span>
           <h3>SKU Rationalization for Distributors</h3>
         </div>
-        <div class="insight-card">
-          <span class="soon">Coming Soon</span>
-          <h3>Compliance for Public Sector Buyers</h3>
-        </div>
+        <a class="insight-card insight-card-live" href="compliance-canadian-public-sector-buyers.html">
+          <span class="soon">Industry Insight</span>
+          <h3>Compliance for Canadian Public Sector Buyers</h3>
+        </a>
         <div class="insight-card">
           <span class="soon">Coming Soon</span>
           <h3>Market Entry Economics for GPOs</h3>
