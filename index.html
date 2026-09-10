@@ -193,9 +193,44 @@
     margin-bottom: 10px;
   }
   .insight-card h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.35; }
-  a.insight-card { display: block; text-decoration: none; color: inherit; transition: border-color 0.2s ease, transform 0.2s ease; }
-  a.insight-card:hover { border-color: var(--green); transform: translateY(-2px); }
-  .insight-card .soon { color: var(--green); }
+  a.insight-card {
+    display: block; text-decoration: none; color: inherit;
+    border-top: 3px solid transparent;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  a.insight-card.insight-card-live {
+    border-top: 3px solid var(--green);
+    box-shadow: 0 2px 10px rgba(63,125,110,0.12);
+  }
+  a.insight-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(63,125,110,0.18);
+  }
+  .insight-card .soon {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .insight-card-live .soon {
+    background: var(--green);
+    color: #fff;
+    padding: 3px 9px;
+    border-radius: 3px;
+  }
+  .read-link {
+    display: block;
+    margin-top: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 
   .contact-box {
     background: var(--navy);
@@ -350,14 +385,15 @@
       </div>
       <p class="insights-copy reveal">Practical write-ups on jan san operations, distribution, and compliance, built from the same real-world experience behind every engagement.</p>
       <div class="insight-cards reveal">
+        <a class="insight-card insight-card-live" href="compliance-canadian-public-sector-buyers.html">
+          <span class="soon">New</span>
+          <h3>Compliance for Canadian Public Sector Buyers</h3>
+          <span class="read-link">Read the article</span>
+        </a>
         <div class="insight-card">
           <span class="soon">Coming Soon</span>
           <h3>SKU Rationalization for Distributors</h3>
         </div>
-        <a class="insight-card insight-card-live" href="compliance-canadian-public-sector-buyers.html">
-          <span class="soon">Industry Insight</span>
-          <h3>Compliance for Canadian Public Sector Buyers</h3>
-        </a>
         <div class="insight-card">
           <span class="soon">Coming Soon</span>
           <h3>Market Entry Economics for GPOs</h3>
